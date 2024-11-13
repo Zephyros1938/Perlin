@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        double frequency = 1.0;
+        double frequency = 1.1;
         double amplitude = 1.0;
         double sizeX = 100.0;
         double sizeY = 100.0;
@@ -28,8 +28,8 @@ public class Main {
             }
         } else {
             System.out.println(
-                    "Usage: \tjava PerlinNoise <frequency> <amplitude> <size x> <size y>\n\trecompile.bat <frequency> <amplitude> <size x> <size y>\n\n\tFrequency going down means a larger zoom and vice-versa\n\tAmplitude is the intensity/brightness of the colors, higher value means more bright.");
-            System.out.println("Using default values: frequency = 1.0, amplitude = 1.0");
+                    "Usage: \tjava PerlinNoise <frequency> <amplitude> <size x> <size y>\n\tEX: java PerlinNoise 1.1 2.0 10.0 10.0");
+            System.out.println("Using default values: frequency = 1.1, amplitude = 1.0");
         }
         for (int size : acceptableSizes) {
             if (args.length != size) {
